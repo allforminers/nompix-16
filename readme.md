@@ -37,19 +37,14 @@ apt install npm -y
 
 npm update
 
+reboot
+
+----------------------------------------------------------
+
+cd nomp
+
 patch -p1 < nomp_x11_stratum_patch.diff
 
-after
-
-cd $HOME/nomp
-
-sudo ufw allow 3030/tcp
-
-sudo ufw allow 3031/tcp
-
-sudo ufw allow 8032/tcp
-
-sudo node init.js
 
 ______________________________________________________
 
@@ -70,10 +65,14 @@ nvm use 0.10.25
 
 ---------------------------------------
 
-close node all
 
-killall node
+cd $HOME/nomp
 
+sudo ufw allow 3030/tcp
+
+sudo ufw allow 3031/tcp
+
+sudo ufw allow 8032/tcp
 
 ______________________________________________________
 RUN
@@ -87,6 +86,13 @@ npm update
 node init.js
 
 ______________________________________________________
+
+close node all
+
+killall node
+
+
+
 
 
 
