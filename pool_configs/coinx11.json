@@ -1,6 +1,6 @@
 {
     "enabled": true,
-    "coin": "dash.json",
+    "coin": "coinx11.json",
 
     "auxes": [  ],
     "address": "TJVv8Cw7RFhLCFRLerUig7639Jz4NhJrcm",
