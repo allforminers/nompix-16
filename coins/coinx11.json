@@ -1,0 +1,6 @@
+{
+    "name": "CoinX11",
+    "symbol": "COINX11",
+    "algorithm": "x11",
+    "mposDiffMultiplier": 256
+}

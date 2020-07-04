@@ -9,35 +9,7 @@ module.exports = function() {
     // Constants
     var version         = '0.0.1',
         PUBLIC_API_URL  = 'http://www.coinwarz.com/v1/api/profitability/?apikey=YOUR_API_KEY&algo=all',
-        USER_AGENT      = 'nomp/node-open-mining-portal'
-
-    // Constructor
-    function Cryptsy(key, secret){
-        // Generate headers signed by this user's key and secret.
-        // The secret is encapsulated and never exposed
-        this._getPrivateHeaders = function(parameters){
-            var paramString, signature;
-
-            if (!key || !secret){
-                throw 'CoinWarz: Error. API key and secret required';
-            }
-
-            // Sort parameters alphabetically and convert to `arg1=foo&arg2=bar`
-            paramString = Object.keys(parameters).sort().map(function(param){
-                return encodeURIComponent(param) + '=' + encodeURIComponent(parameters[param]);
-            }).join('&');
-
-            signature = crypto.createHmac('sha512', secret).update(paramString).digest('hex');
-
-            return {
-                Key: key,
-                Sign: signature
-            };
-        };
-    }
-
-    // If a site uses non-trusted SSL certificates, set this value to false
-    Cryptsy.STRICT_SSL = true;
+        USER_AGENT      = 'unomp/unified-node-open-mining-portal'
 
     // Helper methods
     function joinCurrencies(currencyA, currencyB){

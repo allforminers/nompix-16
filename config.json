@@ -25,29 +25,36 @@
         },
         "redis": {
             "host": "127.0.0.1",
-            "port": 6379
+            "port": 6379,
+            "db": 0,
+            "password": ""
         }
     },
 
     "website": {
         "enabled": true,
         "host": "0.0.0.0",
+        "siteTitle": "poolcoin",
         "port": 80,
         "stratumHost": "iphost",
         "stats": {
             "updateInterval": 60,
             "historicalRetention": 43200,
-            "hashrateWindow": 300
+            "hashrateWindow": 300,
+            "graphColors": ["#058DC7", "#50B432", "#ED561B", "#DDDF00", "#24CBE5", "#64E572",
+            "#FF9655", "#FFF263", "#6AF9C4"]
         },
         "adminCenter": {
-            "enabled": false,
+            "enabled": true,
             "password": "password"
         }
     },
 
     "redis": {
         "host": "127.0.0.1",
-        "port": 6379
+        "port": 6379,
+        "db": 0,
+        "password": ""
     },
 
     "switching": {
@@ -106,8 +113,6 @@
         "updateInterval": 600,
         "depth": 0.90,
         "usePoloniex": true,
-        "useCryptsy": true,
-        "useMintpal": true,
         "useBittrex": true
     }
 }

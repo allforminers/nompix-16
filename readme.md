@@ -1,4 +1,4 @@
-For New SHA/X11/OTHERS u16
+For old SHA/X11/OTHERS u16
 ______________________________________________________
 
 git clone https://github.com/allforminers/nompix-16-for-New-Coin.git nomp
@@ -40,13 +40,7 @@ npm update
 reboot
 
 ----------------------------------------------------------
-
-cd nomp
-
-patch -p1 < nomp_x11_stratum_patch.diff
-
-
-______________________________________________________
+__________________________________________________
 
 OLD VERSION NOMPIX11 u16
 ______________________________________________________
@@ -68,11 +62,11 @@ nvm use 0.10.25
 
 cd $HOME/nomp
 
-sudo ufw allow 3030/tcp
+sudo ufw allow 3011/tcp
 
-sudo ufw allow 3031/tcp
+sudo ufw allow 3012/tcp
 
-sudo ufw allow 8032/tcp
+sudo ufw allow 8013/tcp
 
 ______________________________________________________
 RUN
