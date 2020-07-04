@@ -33,6 +33,8 @@ cd ..
 
 cd nomp
 
+apt install nodejs-legacy -y
+
 apt install npm -y
 
 npm update
