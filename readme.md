@@ -47,6 +47,8 @@ __________________________________________________
 OLD VERSION NOMPIX11 u16
 ______________________________________________________
 
+cd nomp
+
 sudo apt install npm -y
 
 sudo npm install posix -y
