@@ -1,7 +1,7 @@
 For New SHA/X11/OTHERS u16
 ______________________________________________________
 
-git clone https://github.com/allforminers/nompix-16.git nomp
+git clone https://github.com/allforminers/nompix-16-for-New-Coin.git nomp
 
 dd if=/dev/zero of=/mnt/myswap.swap bs=1M count=4000
 
