@@ -27,6 +27,8 @@ cd installubuntu
 
 sudo bash install.sh
 
+cd ..
+
 ----------------------------------------------------------
 
 cd nomp
