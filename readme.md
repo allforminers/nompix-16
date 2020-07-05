@@ -33,44 +33,39 @@ cd ..
 
 cd nomp
 
-apt install nodejs-legacy -y
-
-apt install npm -y
+apt-get install -y libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server -y
 
 npm update
 
 reboot
 
 ----------------------------------------------------------
-__________________________________________________
 
-OLD VERSION NOMPIX11 u16
-______________________________________________________
 
 cd nomp
 
-sudo apt install npm -y
+curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh -o install_nvm.sh
 
-sudo npm install posix -y
-
-curl https://raw.githubusercontent.com/creationix/nvm/v0.16.1/install.sh | sh
+bash install_nvm.sh
 
 source ~/.profile
+
+nvm ls-remote
 
 nvm install 0.10.25
 
 nvm use 0.10.25
 
----------------------------------------
+sudo npm install posix -y
+----------------------------------------------------------
 
 
 cd $HOME/nomp
-
 sudo ufw allow 3011/tcp
 
 sudo ufw allow 3012/tcp
 
-sudo ufw allow 8013/tcp
+sudo ufw allow 3013/tcp
 
 ______________________________________________________
 RUN
