@@ -1,4 +1,4 @@
-For old SHA/X11/OTHERS u16
+For old u16
 ______________________________________________________
 
 git clone https://github.com/allforminers/nompix-16.git nomp
