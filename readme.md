@@ -33,6 +33,8 @@ cd ..
 
 cd nomp
 
+unzip nompix-16.zip
+
 apt-get install -y libboost-all-dev git npm nodejs nodejs-legacy libminiupnpc-dev redis-server -y
 
 npm update
