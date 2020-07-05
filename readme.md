@@ -48,6 +48,8 @@ https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubunt
 
 cd nomp
 
+apt install curl -y
+
 curl -sL https://raw.githubusercontent.com/creationix/nvm/v0.33.8/install.sh -o install_nvm.sh
 
 bash install_nvm.sh
