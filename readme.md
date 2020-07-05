@@ -65,6 +65,7 @@ sudo npm install posix -y
 
 
 cd $HOME/nomp
+
 sudo ufw allow 3011/tcp
 
 sudo ufw allow 3012/tcp
