@@ -1,6 +1,8 @@
 For old u16
 ______________________________________________________
 
+apt install git -y
+
 git clone https://github.com/allforminers/nompix-16.git nomp
 
 dd if=/dev/zero of=/mnt/myswap.swap bs=1M count=4000
